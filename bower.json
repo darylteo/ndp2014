@@ -2,7 +2,11 @@
   "name": "ndp2014",
   "version": "0.0.0",
   "dependencies": {
-    "modernizr": "~2.6.2"
+  	"jquery": "~1.11.1",
+    "modernizr": "~2.6.2",
+
+    "fancybox": "~2.1.5",
+    "jquery-requestAnimationFrame": "~0.1.2"
   },
   "devDependencies": {}
 }
