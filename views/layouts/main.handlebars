@@ -26,17 +26,14 @@
       <!--[if lt IE 10]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-          
-      <header>
-        <div class="container">
-          {{> nav }}
-        </div>
-      </header>
       <div class="container">
+        <header>
+          {{> nav }}
+        </header>
         <table cellpadding="0" cellspacing="0" border="0">
           {{{ body }}}
-          {{> footer }}
         </table>
+        {{> footer }}  
       </div>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
