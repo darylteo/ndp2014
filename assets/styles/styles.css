@@ -1,3 +1,95 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/**
+ * OBJECTS-AND-ABSTRACTIONS
+ * OVERRIDES
+ * CUSTOM
+    ^ COLORS
+    ^ FONTS
+    ^ CUSTOM FONT MIXINS
+*/
+/**
+ * Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if inuit.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. inuit.css ignores its own variables in favour of
+ * using your own, so you can completely modify how inuit.css works without ever
+ * having to alter the framework itself.
+ */
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of inuit.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/**
+ * Place any variables that should override inuit.css’ defaults here.
+ */
+/**
+ * Other overrides to inuit
+ */
+/* line 85, sass/_vars.scss */
+label {
+  cursor: default !important;
+}
+
+/* line 86, sass/_vars.scss */
+.form-fields input[type=text] {
+  cursor: text;
+}
+
+/* line 87, sass/_vars.scss */
+.check-list label {
+  cursor: pointer !important;
+}
+
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of inuit.css here.
+ */
+/**
+ * ^COLORS 
+ */
+/**
+ * ^FONTS
+ */
+/**
+ * ^CUSTOM FONT MIXINS 
+ */
+/*------------------------------------*\ 
+    $CONTENTS    
+\*------------------------------------*/
+/**
+ * CLEARFIX 
+*/
+/* line 8, sass/ui/_helpers.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+/* line 13, sass/ui/_helpers.scss */
+.cf:after {
+  clear: both;
+}
+
+/* For IE 6/7 only */
+/* line 17, sass/ui/_helpers.scss */
+.cf {
+  *zoom: 1;
+}
+
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
@@ -9,7 +101,8 @@
 \*------------------------------------*/
 /* line 12, sass/ui/_scaffolding.scss */
 .container {
-  width: 1200px;
+  max-width: 1190px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
@@ -22,6 +115,11 @@
 /*------------------------------------*\
     $LOGO
 \*------------------------------------*/
+/* line 12, sass/ui/_header.scss */
+header {
+  background-color: #333;
+}
+
 /*------------------------------------*\
     $CONTENTS
 \*------------------------------------*/
@@ -32,31 +130,27 @@
 /*------------------------------------*\
     $NAV PRIMARY
 \*------------------------------------*/
-/* line 13, sass/ui/_navs.scss */
-nav {
-  padding: 0 10px;
-}
-/* line 16, sass/ui/_navs.scss */
+/* line 14, sass/ui/_navs.scss */
 nav .social {
   float: left;
 }
-/* line 19, sass/ui/_navs.scss */
+/* line 17, sass/ui/_navs.scss */
 nav .links {
   float: right;
 }
-/* line 23, sass/ui/_navs.scss */
+/* line 21, sass/ui/_navs.scss */
 nav .links > ul li {
   float: left;
   padding: 0 10px;
   list-style: none;
 }
-/* line 28, sass/ui/_navs.scss */
+/* line 26, sass/ui/_navs.scss */
 nav .links > ul li a:link, nav .links > ul li a:visited {
   text-transform: uppercase;
   font-weight: 900;
   color: #999;
 }
-/* line 34, sass/ui/_navs.scss */
+/* line 32, sass/ui/_navs.scss */
 nav .links > ul li a:hover, nav .links > ul li a:active {
   color: #CCC;
 }
@@ -105,323 +199,17 @@ footer .copyright {
   bottom: 20px;
 }
 
-/* line 6, sass/styles.scss */
+/* line 1, sass/ui/_home.scss */
+.home {
+  position: relative;
+}
+/* line 4, sass/ui/_home.scss */
+.home .sidebar {
+  width: 190px;
+  height: 100%;
+}
+
+/* line 11, sass/styles.scss */
 body {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  background-image: url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-color: #3a3a3a;
-}
-
-/* line 15, sass/styles.scss */
-a, a:link, a:visited {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #5ca0bc;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 12px;
-}
-
-/* line 23, sass/styles.scss */
-a:hover {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1F6DB9;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 12px;
-}
-
-/* line 31, sass/styles.scss */
-.content {
-  font-family: sans-serif,Arial, Helvetica;
-  color: #5a5a5a;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 120%;
-  font-weight: normal;
-}
-
-/* line 40, sass/styles.scss */
-#d-logoPlusApps, #d-content {
-  background-color: #FFFFFF;
-  background-repeat: repeat-y;
-}
-
-/* line 45, sass/styles.scss */
-#d-ballot {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/banner_application_form.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 56, sass/styles.scss */
-#d-highlights {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/highlights/banner_highlights.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 68, sass/styles.scss */
-#d-parade {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/highlights/banner_pc.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 80, sass/styles.scss */
-#d-show {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/highlights/banner_shows.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 92, sass/styles.scss */
-#d-d3 {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/highlights/banner_d3.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 104, sass/styles.scss */
-#d-theme {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/ndp2014/banner_theme_logo.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 116, sass/styles.scss */
-#d-chairman {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/ndp2014/banner_chairmans_message.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 128, sass/styles.scss */
-#d-media {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/ndp2014/banner_media_releases.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 140, sass/styles.scss */
-#d-gallery {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/gallery/banner_gallery.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 152, sass/styles.scss */
-#d-participation {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/participation/banner_participation.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 164, sass/styles.scss */
-#d-map {
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-image: url(../images/ndp2014/banner_celebration_map.jpg);
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 12px;
-  padding-left: 5px;
-  line-height: 20px;
-  -webkit-text-size-adjust: 100%;
-  max-height: 6000em;
-}
-
-/* line 176, sass/styles.scss */
-#chairman {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 20px;
-  line-height: 25px;
-}
-
-/* line 182, sass/styles.scss */
-#theme {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-/* line 188, sass/styles.scss */
-#d-abovefooter {
-  height: 50px;
-}
-
-/* line 192, sass/styles.scss */
-#apps {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  color: #C0C0C0;
-  height: 450px;
-  vertical-align: bottom;
-  padding-left: 15px;
-}
-
-/* line 202, sass/styles.scss */
-#verticalspace {
-  height: 5px;
-}
-
-/* line 206, sass/styles.scss */
-#hortizontalspace {
-  width: 5px;
-}
-
-/* line 210, sass/styles.scss */
-.title {
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 30px;
-}
-
-/* line 215, sass/styles.scss */
-td a, td a:link, td a:visited {
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 12px;
-}
-
-/* line 222, sass/styles.scss */
-table {
-  text-align: left;
-}
-
-/* line 226, sass/styles.scss */
-#home_text {
-  background-color: #eaeaea;
-}
-
-/* line 230, sass/styles.scss */
-#home_text_title {
-  font-family: 'open sans light', sans-serif;
-  color: #0f0604;
-  font-size: 16px !important;
-  text-align: center;
-  line-height: 20px;
-}
-
-/* line 238, sass/styles.scss */
-#home_text_content {
-  font-family: 'Open Sans', sans-serif;
-  color: #4f4f4f;
-  font-size: 11px;
-}
-
-/* line 245, sass/styles.scss */
-#home_video {
-  background-image: url(../images/img_home8.jpg);
-}
-
-/* line 249, sass/styles.scss */
-#home_video_title {
-  font-family: 'Open Sans', sans-serif;
-  color: white !important;
-  font-size: 20px !important;
-  font-weight: 600;
-  padding-left: 7px;
-}
-
-/* line 257, sass/styles.scss */
-#home_video_content {
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #2e5630;
-  font-size: 12px;
-  font-weight: 600;
-  padding-left: 7px;
-}
-
-/* line 265, sass/styles.scss */
-a.uploadlink {
-  color: #000000 !important;
-}
-
-/* line 269, sass/styles.scss */
-a.dropdown_active {
-  color: #FFFFFF  !important;
-}
-
-/* line 273, sass/styles.scss */
-a.dropdown_active:hover {
-  color: #FFFF00  !important;
-}
-
-/* line 279, sass/styles.scss */
-.content_link a, .content_link a:link, .content_link a:visited {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #FF0000;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 12px;
-}
-
-/* line 287, sass/styles.scss */
-.content_link a:hover {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #1F6DB9;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 12px;
+  background: url(../images/bg.jpg) no-repeat #3a3a3a;
 }

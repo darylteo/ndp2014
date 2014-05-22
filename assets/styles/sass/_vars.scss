@@ -86,17 +86,14 @@ label{ cursor:default !important; }
 .form-fields input[type=text]{ cursor: text;}
 .check-list label{ cursor: pointer !important }
 
-
-
-
-
-
 /*------------------------------------*\
     $CUSTOM
 \*------------------------------------*/
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
+
+$width:             1190px;
 
 /**
  * ^COLORS 
@@ -124,7 +121,6 @@ $gray4:             #9A9EA1;
 $gray5:             #808284;
 $gray6:             #58585B;
 $black:             #000;
-
 
 /**
  * ^FONTS

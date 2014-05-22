@@ -6,7 +6,8 @@
     "modernizr": "~2.6.2",
 
     "fancybox": "~2.1.5",
-    "jquery-requestAnimationFrame": "~0.1.2"
+    "jquery-requestAnimationFrame": "~0.1.2",
+    "normalize-css": "~3.0.1"
   },
   "devDependencies": {}
 }
