@@ -11,7 +11,13 @@ var port = 3000;
  * Use Handlebars for templating
  */
 var exphbs = require('express3-handlebars');
-var hbs;
+var hbs = {
+  helpers: {
+    "with": function(context, options) {
+        return options.fn(context);
+    }
+  }
+};
 
 // For gzip compression
 app.use(express.compress());
@@ -24,7 +30,8 @@ if (process.env.NODE_ENV === 'production') {
     app.engine('handlebars', exphbs({
         defaultLayout: 'main',
         layoutsDir: 'dist/views/layouts/',
-        partialsDir: 'dist/views/partials/'
+        partialsDir: 'dist/views/partials/',
+        helpers: hbs.helpers
     }));
 
     // Locate the views
@@ -38,7 +45,8 @@ if (process.env.NODE_ENV === 'production') {
         // Default Layout and locate layouts and partials
         defaultLayout: 'main',
         layoutsDir: 'views/layouts/',
-        partialsDir: 'views/partials/'
+        partialsDir: 'views/partials/',
+        helpers: hbs.helpers
     }));
 
     // Locate the views
@@ -51,14 +59,18 @@ if (process.env.NODE_ENV === 'production') {
 // Set Handlebars
 app.set('view engine', 'handlebars');
 
-
-
 /*
  * Routes
  */
 // Index Page
 app.get('/', function(request, response, next) {
-    response.render('index');
+    response.render('index', {
+        navlinks: [
+            { label: "Home"     , url: "/" },
+            { label: "NDP2014"  , url: "/" },
+            { label: "Gallery"  , url: "/gallery" }
+        ]
+    });
 });
 
 

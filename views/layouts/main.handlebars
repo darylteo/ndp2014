@@ -26,14 +26,18 @@
       <!--[if lt IE 10]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-
-      <table cellpadding="0" cellspacing="0" border="0" width="1200">
-      {{> nav  }}
-      
-      {{{ body }}}
-
-      {{> footer }}
-      </table>
+          
+      <header>
+        <div class="container">
+          {{> nav }}
+        </div>
+      </header>
+      <div class="container">
+        <table cellpadding="0" cellspacing="0" border="0">
+          {{{ body }}}
+          {{> footer }}
+        </table>
+      </div>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
@@ -244,15 +248,23 @@
         } ]);
       }
 
-      $('#plightbox').fancybox();
-      $('#jrl').fancybox();
-      $('a.lightbox').fancybox();
-
       var instagramRandom = Math.floor( Math.random() * sLow.length );
       obj = document.getElementById("frominstagram");
       objlink = document.getElementById("ilightbox");
       objlink.setAttribute('href', sStandard[instagramRandom]);
       obj.src = sLow[instagramRandom].src;
+
+      (function(window, document, $) {
+        $(function() {
+          autoDisplay();
+          autoDisplayPart();
+
+
+          $('#plightbox').fancybox();
+          $('#jrl').fancybox();
+          $('a.lightbox').fancybox();
+        });
+      })(window, document, jQuery)
     </script>
   </body>
 </html>

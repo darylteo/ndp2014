@@ -6,15 +6,38 @@
  * NAV MOBILE
 */
 
-
-
-
-
 /*------------------------------------*\
     $NAV PRIMARY
 \*------------------------------------*/
 
+nav {
+	padding: 0 10px;
 
+	.social {
+		float: left;
+	}
+	.links {
+		float: right;
+
+		> ul {
+			li {
+				float: left;
+				padding: 0 10px;
+				list-style: none;
+
+				a:link, a:visited {
+					text-transform: uppercase;
+					font-weight: 900;
+					color: #999;
+				}
+
+				a:hover, a:active {
+					color: #CCC;
+				}
+ 			}
+		}
+	}
+}
 
 
 

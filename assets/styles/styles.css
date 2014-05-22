@@ -1,316 +1,428 @@
-body
-{
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-	background-image:url(../images/bg.jpg);
-	background-repeat:no-repeat;
-	background-color:#3a3a3a;
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * GRID
+*/
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+/* line 12, sass/ui/_scaffolding.scss */
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * LOGO
+*/
+/*------------------------------------*\
+    $LOGO
+\*------------------------------------*/
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * NAV PRIMARY
+ * NAV MOBILE
+*/
+/*------------------------------------*\
+    $NAV PRIMARY
+\*------------------------------------*/
+/* line 13, sass/ui/_navs.scss */
+nav {
+  padding: 0 10px;
+}
+/* line 16, sass/ui/_navs.scss */
+nav .social {
+  float: left;
+}
+/* line 19, sass/ui/_navs.scss */
+nav .links {
+  float: right;
+}
+/* line 23, sass/ui/_navs.scss */
+nav .links > ul li {
+  float: left;
+  padding: 0 10px;
+  list-style: none;
+}
+/* line 28, sass/ui/_navs.scss */
+nav .links > ul li a:link, nav .links > ul li a:visited {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #999;
+}
+/* line 34, sass/ui/_navs.scss */
+nav .links > ul li a:hover, nav .links > ul li a:active {
+  color: #CCC;
+}
+
+/*------------------------------------*\
+    $NAV MOBILE
+\*------------------------------------*/
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * FOOTER
+*/
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/* line 11, sass/ui/_footer.scss */
+#footer {
+  background-color: #ef4226;
+}
+
+/* line 15, sass/ui/_footer.scss */
+#footer_copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #FFFFFF;
+}
+
+/* line 21, sass/ui/_footer.scss */
+#footer_link, #footer_link a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+/* line 27, sass/ui/_footer.scss */
+#footer_link a:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ffd441;
+}
+
+/* line 33, sass/ui/_footer.scss */
+#footer_ndpmotto {
+  font-family: 'open sans regular', sans-serif;
+  color: #fdbcb2;
+  font-size: 15px !important;
+}
+
+/* line 6, sass/styles.scss */
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-color: #3a3a3a;
+}
+
+/* line 15, sass/styles.scss */
 a, a:link, a:visited {
-	font-family:Arial, Helvetica, sans-serif;
-	color:#5ca0bc;
-	text-decoration:none;
-	font-size:12px;
-	line-height:12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5ca0bc;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
 }
 
+/* line 23, sass/styles.scss */
 a:hover {
-	font-family:Arial, Helvetica, sans-serif;
-	color:#1F6DB9;
-	text-decoration:none;
-	font-size:12px;
-	line-height:12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1F6DB9;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
 }
 
+/* line 31, sass/styles.scss */
 .content {
-	font-family:sans-serif,Arial, Helvetica;
-	color:#5a5a5a;
-	text-decoration:none;
-	font-size:12px;
-	line-height:120%;
-	font-weight:normal;
+  font-family: sans-serif,Arial, Helvetica;
+  color: #5a5a5a;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 120%;
+  font-weight: normal;
 }
 
-#footer{
-background-color: #ef4226
+/* line 40, sass/styles.scss */
+#d-logoPlusApps, #d-content {
+  background-color: #FFFFFF;
+  background-repeat: repeat-y;
 }
 
-#footer_copyright{
-font-family:Arial, Helvetica, sans-serif; 
-font-size:11px; 
-color:#FFFFFF;
+/* line 45, sass/styles.scss */
+#d-ballot {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/banner_application_form.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#footer_link, #footer_link a{
-font-family:Arial, Helvetica, sans-serif;
-font-size:12px; 
-color:#FFFFFF;
+/* line 56, sass/styles.scss */
+#d-highlights {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/highlights/banner_highlights.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#footer_link a:hover{
-font-family:Arial, Helvetica, sans-serif;
-font-size:12px; 
-color:#ffd441;
+/* line 68, sass/styles.scss */
+#d-parade {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/highlights/banner_pc.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#footer_ndpmotto{
-	font-family: 'open sans regular', sans-serif;
-	color: #fdbcb2;
-	font-size:15px !important;
+/* line 80, sass/styles.scss */
+#d-show {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/highlights/banner_shows.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#d-logoPlusApps, #d-content{
-background-color:#FFFFFF;
-background-repeat:repeat-y
+/* line 92, sass/styles.scss */
+#d-d3 {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/highlights/banner_d3.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#d-ballot{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/banner_application_form.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 104, sass/styles.scss */
+#d-theme {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/ndp2014/banner_theme_logo.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#d-highlights{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/highlights/banner_highlights.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 116, sass/styles.scss */
+#d-chairman {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/ndp2014/banner_chairmans_message.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#d-parade{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/highlights/banner_pc.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 128, sass/styles.scss */
+#d-media {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/ndp2014/banner_media_releases.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#d-show{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/highlights/banner_shows.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 140, sass/styles.scss */
+#d-gallery {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/gallery/banner_gallery.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#d-d3{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/highlights/banner_d3.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 152, sass/styles.scss */
+#d-participation {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/participation/banner_participation.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#d-theme{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/ndp2014/banner_theme_logo.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 164, sass/styles.scss */
+#d-map {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-image: url(../images/ndp2014/banner_celebration_map.jpg);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 20px;
+  -webkit-text-size-adjust: 100%;
+  max-height: 6000em;
 }
 
-#d-chairman{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/ndp2014/banner_chairmans_message.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 176, sass/styles.scss */
+#chairman {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
 }
 
-#d-media{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/ndp2014/banner_media_releases.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 182, sass/styles.scss */
+#theme {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-#d-gallery{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/gallery/banner_gallery.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 188, sass/styles.scss */
+#d-abovefooter {
+  height: 50px;
 }
 
-#d-participation{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/participation/banner_participation.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 192, sass/styles.scss */
+#apps {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #C0C0C0;
+  height: 450px;
+  vertical-align: bottom;
+  padding-left: 15px;
 }
 
-#d-map{
-background-color:#FFFFFF;
-background-repeat: no-repeat;
-background-image: url(../images/ndp2014/banner_celebration_map.jpg);
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 12px;
-padding-left:5px;
-line-height: 20px;
--webkit-text-size-adjust: 100%;
-max-height: 6000em;
+/* line 202, sass/styles.scss */
+#verticalspace {
+  height: 5px;
 }
 
-#chairman{
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 20px;
-line-height: 25px;
+/* line 206, sass/styles.scss */
+#hortizontalspace {
+  width: 5px;
 }
 
-#theme{
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 18px;
-line-height: 30px;
+/* line 210, sass/styles.scss */
+.title {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 30px;
 }
 
-#d-abovefooter{
-height: 50px;
-}
-
-#apps{
-font-family:Arial, Helvetica, sans-serif;
-font-size: 10px;
-font-weight:bold;
-color:	#C0C0C0;
-height: 450px; 
-vertical-align: bottom;
-padding-left: 15px;
-}
-
-#verticalspace{
-height: 5px;
-}
-
-#hortizontalspace{
-width: 5px;
-}
-
-.title{
-font-family: 'Open Sans', Arial, sans-serif;
-font-size: 30px;
-}
-
+/* line 215, sass/styles.scss */
 td a, td a:link, td a:visited {
-	font-family:'Open Sans', Arial, sans-serif;
-	color: #FFFFFF;
-	text-decoration:none;
-	font-size:12px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 12px;
 }
 
+/* line 222, sass/styles.scss */
 table {
-	text-align: left;
+  text-align: left;
 }
 
-#home_text{
-	background-color: #eaeaea;
+/* line 226, sass/styles.scss */
+#home_text {
+  background-color: #eaeaea;
 }
 
-#home_text_title{
-	font-family: 'open sans light', sans-serif;
-	color: #0f0604;
-	font-size:16px !important;
-	text-align:center;
-		line-height: 20px;
+/* line 230, sass/styles.scss */
+#home_text_title {
+  font-family: 'open sans light', sans-serif;
+  color: #0f0604;
+  font-size: 16px !important;
+  text-align: center;
+  line-height: 20px;
 }
 
-#home_text_content{
-	font-family: 'Open Sans', sans-serif;
-	color: #4f4f4f;
-	font-size:11px;
+/* line 238, sass/styles.scss */
+#home_text_content {
+  font-family: 'Open Sans', sans-serif;
+  color: #4f4f4f;
+  font-size: 11px;
 }
 
-
-#home_video{
-	background-image: url(../images/img_home8.jpg);
+/* line 245, sass/styles.scss */
+#home_video {
+  background-image: url(../images/img_home8.jpg);
 }
 
-#home_video_title{
-	font-family: 'Open Sans', sans-serif;
-	color: #FFFFFF!important;
-	font-size:20px!important;
-	font-weight:600;
-	padding-left: 7px;
+/* line 249, sass/styles.scss */
+#home_video_title {
+  font-family: 'Open Sans', sans-serif;
+  color: white !important;
+  font-size: 20px !important;
+  font-weight: 600;
+  padding-left: 7px;
 }
 
-#home_video_content{
-	font-family: 'Open Sans Condensed', sans-serif;
-	color: #2e5630;
-	font-size:12px;
-	font-weight:600;
-	padding-left: 7px;
+/* line 257, sass/styles.scss */
+#home_video_content {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #2e5630;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 7px;
 }
 
+/* line 265, sass/styles.scss */
 a.uploadlink {
-color: #000000 !important;
+  color: #000000 !important;
 }
 
-a.dropdown_active{
-color:#FFFFFF  !important;
+/* line 269, sass/styles.scss */
+a.dropdown_active {
+  color: #FFFFFF  !important;
 }
 
-a.dropdown_active:hover{
-color: #FFFF00  !important;
+/* line 273, sass/styles.scss */
+a.dropdown_active:hover {
+  color: #FFFF00  !important;
 }
 
-
-
+/* line 279, sass/styles.scss */
 .content_link a, .content_link a:link, .content_link a:visited {
-	font-family:Arial, Helvetica, sans-serif;
-	color: #FF0000;
-	text-decoration:none;
-	font-size:12px;
-	line-height:12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FF0000;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
 }
 
+/* line 287, sass/styles.scss */
 .content_link a:hover {
-	font-family:Arial, Helvetica, sans-serif;
-	color:#1F6DB9;
-	text-decoration:none;
-	font-size:12px;
-	line-height:12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1F6DB9;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 12px;
 }
