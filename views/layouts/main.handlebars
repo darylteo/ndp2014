@@ -43,10 +43,10 @@
       <script type="text/javascript" src="/bower_components/jquery-requestAnimationFrame/dist/jquery.requestAnimationFrame.js"></script>
       <script type="text/javascript" src="/bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
       <script type="text/javascript" src="/bower_components/fancybox/source/jquery.fancybox.js"></script>
-
+      <script type="text/javascript" src="/bower_components/jquery-cycle2/build/jquery.cycle2.js"></script>
 
       <!-- build:js scripts/jscripts.js -->
-      <script type="text/javascript" src="scripts/jscripts.js"></script>
+      
       <!-- endbuild -->
 
       <script type="text/javascript">
@@ -246,21 +246,11 @@
         } ]);
       }
 
-      var instagramRandom = Math.floor( Math.random() * sLow.length );
-      obj = document.getElementById("frominstagram");
-      objlink = document.getElementById("ilightbox");
-      objlink.setAttribute('href', sStandard[instagramRandom]);
-      obj.src = sLow[instagramRandom].src;
-
       (function(window, document, $) {
         $(function() {
-          autoDisplay();
-          autoDisplayPart();
+          $('.fancybox').fancybox();
 
-
-          $('#plightbox').fancybox();
-          $('#jrl').fancybox();
-          $('a.lightbox').fancybox();
+          $('.carousel').cycle();
         });
       })(window, document, jQuery)
     </script>

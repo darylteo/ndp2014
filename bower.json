@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "dependencies": {
   	"jquery": "~1.11.1",
-    "modernizr": "~2.6.2",
+    "jquery-requestAnimationFrame": "~0.1.2",
+    "jquery-cycle2": "~2.1.5",
 
     "fancybox": "~2.1.5",
-    "jquery-requestAnimationFrame": "~0.1.2",
+    "modernizr": "~2.6.2",
+    
     "normalize-css": "~3.0.1"
   },
   "devDependencies": {}
