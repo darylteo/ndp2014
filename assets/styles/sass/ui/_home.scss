@@ -3,40 +3,52 @@
 
 	background: #FFF;
 
+	a {
+		display: block;
+	}
+
+	img {
+		display: block;
+	}
+
+	/* Home Page Grid */
+	[class*='col-'] {
+  	float: left;
+  	padding-left: 3px;
+	  padding-right: 3px;
+	}
+
+	[class*='col-']:first-of-type {
+	  padding-left: 0;
+	}
+
+	[class*='col-']:last-of-type {
+		float: right;
+	  padding-right: 0;
+	}
+
+	.row {
+	  margin-bottom: 6px;
+	}
+
+	.row:last-of-type {
+	  margin-bottom: 0;
+	}	
+
+	/* Home Page Elements */
 	.sidebar {
-		width: 190px;
+		width: 200px;
 	}
 
 	.main {
+		width: 960px;
+		overflow-x: hidden;
 
-	}
-
-	.overlay {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		float:left;
-		z-index: 9999;
-	}
-
-	.instagram-gallery {
-		width: 165px;
-		height: 165px;
-
-		.cycle-overlay {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
+		.square {
+			position: relative;
+		  height: 0;
+		  padding-bottom: 100%;
+		  overflow: hidden;	
 		}
-	}
-
-	.week-photos {
-		position: relative;
-	}
-
-	.heroes {
-		position: relative;
 	}
 }
