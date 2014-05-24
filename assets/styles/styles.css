@@ -71,23 +71,36 @@ label {
 \*------------------------------------*/
 /**
  * CLEARFIX 
-*/
-/* line 8, sass/ui/_helpers.scss */
+ */
+/* line 7, sass/ui/_helpers.scss */
 .cf:before,
 .cf:after {
   content: " ";
   display: table;
 }
 
-/* line 13, sass/ui/_helpers.scss */
+/* line 12, sass/ui/_helpers.scss */
 .cf:after {
   clear: both;
 }
 
 /* For IE 6/7 only */
-/* line 17, sass/ui/_helpers.scss */
+/* line 16, sass/ui/_helpers.scss */
 .cf {
   *zoom: 1;
+}
+
+/**
+ * FLOATS
+ */
+/* line 23, sass/ui/_helpers.scss */
+.fl {
+  float: left;
+}
+
+/* line 26, sass/ui/_helpers.scss */
+.fr {
+  float: right;
 }
 
 /*------------------------------------*\
@@ -202,13 +215,13 @@ footer .copyright {
 /* line 1, sass/ui/_home.scss */
 .home {
   position: relative;
+  background: #FFF;
 }
-/* line 4, sass/ui/_home.scss */
+/* line 6, sass/ui/_home.scss */
 .home .sidebar {
   width: 190px;
-  height: 100%;
 }
-/* line 9, sass/ui/_home.scss */
+/* line 14, sass/ui/_home.scss */
 .home .overlay {
   position: absolute;
   bottom: 0;
@@ -216,12 +229,12 @@ footer .copyright {
   float: left;
   z-index: 9999;
 }
-/* line 17, sass/ui/_home.scss */
+/* line 22, sass/ui/_home.scss */
 .home .instagram-gallery {
   width: 165px;
   height: 165px;
 }
-/* line 21, sass/ui/_home.scss */
+/* line 26, sass/ui/_home.scss */
 .home .instagram-gallery .cycle-overlay {
   position: absolute;
   top: 0;
@@ -229,11 +242,11 @@ footer .copyright {
   left: 0;
   right: 0;
 }
-/* line 30, sass/ui/_home.scss */
+/* line 35, sass/ui/_home.scss */
 .home .week-photos {
   position: relative;
 }
-/* line 34, sass/ui/_home.scss */
+/* line 39, sass/ui/_home.scss */
 .home .heroes {
   position: relative;
 }

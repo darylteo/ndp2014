@@ -3,17 +3,26 @@
 \*------------------------------------*/ 
 /**
  * CLEARFIX 
-*/
-
+ */
 .cf:before,
 .cf:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 .cf:after {
-    clear: both;
+  clear: both;
 }
 /* For IE 6/7 only */
 .cf {
-    *zoom: 1;
+  *zoom: 1;
+}
+
+/**
+ * FLOATS
+ */
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
 }
